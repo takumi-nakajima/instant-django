@@ -1,81 +1,81 @@
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>1_文字列</p>
+        <p>1_タイトル</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{  item.sample_1|default_if_none:"未入力"  }}</p>
+        <p>{{  item.title|default_if_none:"未入力"  }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>2_メモ</p>
+        <p>2_著者</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{  item.sample_2|default_if_none:"未入力" }}</p>
+        <p>{{  item.author|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>3_整数</p>
+        <p>3_出版社</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{  item.sample_3|default_if_none:"未入力" }}</p>
+        <p>{{  item.publisher|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>4_浮動小数点</p>
+        <p>4_価格</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{  item.sample_4|default_if_none:"未入力" }}</p>
+        <p>{{  item.price|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>5_固定小数点</p>
+        <p>5_ジャンル</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{  item.sample_5|default_if_none:"未入力" }}</p>
+        <p>{{  item.get_ganre_display|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>6_ブール値</p>
+        <p>6_販売形態</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{ item.sample_6|yesno:"はい,いいえ" }}</p>
+        <p>{{ item.selltype|yesno:"紙媒体,電子版" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>7_日付</p>
+        <p>7_購入日</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{ item.sample_7|date:"Y年m月d日" }}</p>
+        <p>{{ item.buydate|date:"Y年m月d日" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>8_日時</p>
+        <p>8_読書状態</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{ item.sample_8|date:"Y年m月d日 G時i分s秒" }}</p>
+        <p>{{ item.get_readstatus_display|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>9_選択肢（固定）</p>
+        <p>9_オヌヌメ度</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{ item.get_sample_9_display|default_if_none:"未入力" }}</p>
+        <p>{{ item.get_recommended_display|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-5 col-sm-3">
-        <p>10_選択肢（マスタ連動）</p>
+        <p>10_メモ、感想</p>
     </div>
     <div class="col-7 col-sm-9">
-        <p>{{ item.sample_10.get_full_name|default_if_none:"未入力" }}</p>
+        <p>{{ item.memo|default_if_none:"未入力" }}</p>
     </div>
 </div>
 <div class="row">
